@@ -1,7 +1,7 @@
 <?php
 
 $paragraph = 'ciao Luigi sono Giovanni';
-$bad_word = $_GET['badword'];
+$bad_word = $_GET['badword'] ?? '';
 $nuovo_paragrafo = str_replace($bad_word, '***', $paragraph);
 
 ?>
